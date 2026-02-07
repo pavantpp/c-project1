@@ -1,0 +1,14 @@
+name: helo world
+ on :
+   push :
+     branchs:
+      main:
+
+  jobs:
+    first-hello-world-jobs:
+      runs-on: ubuntu_latest
+      steps: 
+        -name : checkout code
+         uses : action/checkout@v3
+        -name: print-message
+         run: echo"hello world gs testing"
